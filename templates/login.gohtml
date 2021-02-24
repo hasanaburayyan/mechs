@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+<h1>Login</h1>
+{{ if .}}
+<p style="color: red">{{ . }}</p>
+{{end}}
+<form method="POST" action="/auth">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password">
+    <input type="submit" name="submit">
+</form>
+</body>
+</html>
